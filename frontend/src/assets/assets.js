@@ -63,7 +63,6 @@ import checked from './checked.png'
 import un_checked from './un_checked.png'
 
 
-export const url = 'https://healthy-fi-me.onrender.com'
 export const assets = {
     logo,
     basket_icon,
