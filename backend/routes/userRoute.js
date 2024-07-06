@@ -1,3 +1,5 @@
+// login register page ki pages ka link creation via routes 
+
 import express from 'express';
 import { loginUser,registerUser } from '../controllers/userController.js';
 const userRouter = express.Router();

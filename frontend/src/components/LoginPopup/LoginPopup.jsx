@@ -15,16 +15,20 @@ const LoginPopup = ({ setShowLogin }) => {
         email: "",
         password: ""
     })
-
+    // functiond defined to handle each time a letter in inputted into the input fields 
+    // as soon as the value is entered the data is divided and stored into various variables and so on 
     const onChangeHandler = (event) => {
         const name = event.target.name
         const value = event.target.value
         setData(data => ({ ...data, [name]: value }))
     }
-
+    
     const onLogin = async (e) => {
+        // prevent website re-load 
         e.preventDefault()
-
+        
+        // calling api to check data (using axios)
+        // url contains the backend hostinng website link 
         let new_url = url;
         if (currState === "Login") {
             new_url += "/api/user/login";
